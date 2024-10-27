@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../signup/signup.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="signup-outsideContainer">
+        <div class="signup-container">
+            <h1>Sign Up</h1>
+            <form id="signupForm">
+                <input type="text" id="username" placeholder="Enter your username" required>
+                <input type="email" id="email" placeholder="Example@email.com" required>
+                <input type="password" id="password" placeholder="At least 8 characters" required>
+                <p id="error" style="color: red; font-size: 10px;"></p>
+                <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+                <button class="btn-submit" type="submit">Sign up</button>
+            </form>
+            <div class="line-or">
+                <span>Or</span>
+            </div>
+            <p>Already have an account? <a href="/pages/login/login.html">Login</a></p>
+        </div>
+        <div class="signup-gambar">
+            <img src="/img/mod2.jpg" alt="signup image">
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../signup/signup.js"></script>
+</body>
+</html>
