@@ -1,6 +1,5 @@
 # TUGAS BESAR 1 WEBPRO 
-
-# RPIC
+Aplikasi reservasi PC internet cafe (RPIC)
 
 # TEAM
 <li>Afzaal isnaufal (ketua)</li>
