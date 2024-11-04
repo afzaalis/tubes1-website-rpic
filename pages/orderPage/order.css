@@ -1,0 +1,233 @@
+body {
+    background-color: #05051E;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #05051E;
+    padding: 10px 20px;
+    color: white;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-logo {
+    width: 40px;
+    height: 40px;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+}
+
+.navbar-link {
+    color: white;
+    text-decoration: none;
+}
+
+.order-container {
+    padding: 20px;
+}
+
+.order-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* Membuat dua kolom, 75% untuk order list, 25% untuk ringkasan */
+    gap: 20px;
+}
+
+.order-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between; /* Memisahkan isi item */
+    align-items: center;
+    background-color: #15162F;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.order-checkbox {
+    margin-right: 15px;
+}
+
+
+.order-details {
+    flex: 1; 
+    text-align: right; 
+    color: white;
+}
+.order-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+
+.order-title {
+    text-align: left;
+}
+
+.order-price {
+    margin: 5px 0;
+}
+
+.time-btn {
+    background-color: #640EF1;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.time-btn:hover {
+    background-color: #5200cc;
+}
+
+.order-summary {
+    background-color: #15162F;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.order-total {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.voucher-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: #2C2D59;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+.left-content {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+}
+
+
+ .buy-btn {
+    background-color: #640EF1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 120px;
+}
+
+.buy-btn:hover {
+    background-color: #5200cc;
+}
+
+.voucher-btn:hover {
+    background-color: #2C2D59   ;
+}
+
+.delete-btn {
+    background-color: #640EF1;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.delete-btn:hover {
+    background-color: #5200cc;
+}
+
+.order-time {
+    background-color: #2C2D59; /* Warna latar belakang */
+    border: none; /* Menghilangkan border default */
+    border-radius: 5px; /* Radius sudut */
+    color: white; /* Warna teks */
+    padding: 8px; /* Ruang di dalam input */
+    width: 7%; /* Mengatur lebar input agar sesuai */
+    box-sizing: border-box; /* Mengatur box-sizing untuk padding */
+}
+
+
+.order-duration {
+    background-color: #2C2D59; /* Warna latar belakang */
+    border: none; /* Menghilangkan border default */
+    border-radius: 5px; /* Radius sudut */
+    color: white; /* Warna teks */
+    padding: 8px; /* Ruang di dalam input */
+    width: 5%; /* Mengatur lebar input agar sesuai */
+    box-sizing: border-box; /* Mengatur box-sizing untuk padding */
+}
+
+.order-time:focus,
+.order-duration:focus {
+    outline: none; 
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Menambahkan bayangan saat fokus */
+}
+
+
+/* Modal Styles */
+.modal {
+    color: white;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    text-align: center;
+    background-color: #15162F;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 610px; 
+    height: auto;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+

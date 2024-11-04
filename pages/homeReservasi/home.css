@@ -61,11 +61,26 @@ body {
     color: transparent;
     margin-bottom: 20px;
 }
+<<<<<<< HEAD
 .container {
     position: relative;
 
     display: flex;
     justify-content: center; /* Center the cards */
+=======
+.home-content h2 {
+    
+    margin-top: 50px;
+    background: linear-gradient(90deg, #4066EF 0%, #98ADF6 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+>>>>>>> afzaal_1302220104
     margin: auto;
 }
 
@@ -81,7 +96,11 @@ body {
     flex-direction: column;
     height: 250px;
     width: 300px;
+<<<<<<< HEAD
     background-color: #17141d;
+=======
+    background-color: #15162F;
+>>>>>>> afzaal_1302220104
     border-radius: 10px;
     box-shadow: -1rem 0 3rem #000;
     transition: 0.4s ease-out;
@@ -138,11 +157,14 @@ body {
     width: 120px; 
 }
 
+<<<<<<< HEAD
 .circle {
     position: absolute;
     top: 180px; 
     left: calc(50% - 60px);
 }
+=======
+>>>>>>> afzaal_1302220104
 
 .stroke {
     stroke: white;
@@ -182,3 +204,23 @@ svg {
     right: 10px;
 }
 
+<<<<<<< HEAD
+=======
+.price-list-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.price-image {
+    margin-top: 10px;
+    width: 350px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.price-list-images, .price-image:hover {
+
+}
+>>>>>>> afzaal_1302220104
