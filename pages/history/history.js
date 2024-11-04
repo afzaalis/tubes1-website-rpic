@@ -1,9 +1,7 @@
-<<<<<<< HEAD
 $(document).ready(function() {
     if ($('#historyTable tbody tr').length === 0) {
         $('.history-container').append('<p style="text-align: center; color: red;">No booking history available.</p>');
     }
-=======
 document.addEventListener("DOMContentLoaded", () => {
     const historyTableBody = document.querySelector("#historyTable tbody");
 
@@ -19,5 +17,5 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
         historyTableBody.appendChild(row);
     });
->>>>>>> afzaal_1302220104
+})
 });

@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-$(document).ready(function() {
-    $('#editProfile').on('click', function() {
-        alert('bentar');
-    });
-});
-=======
 $(document).ready(function () {
     $(".btn-view-voucher").on("click", function () {
         const voucherName = $(this).data("voucher");
@@ -62,4 +55,3 @@ $(document).ready(function() {
 });
 
 
->>>>>>> afzaal_1302220104

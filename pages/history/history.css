@@ -58,14 +58,14 @@ th, td {
 }
 
 th {
-    background-color: #00A8FF; /* Warna header tabel */
+    background-color: #00A8FF; 
     color: white;
 }
 
 tr:nth-child(even) {
-    background-color: #22252D; /* Warna baris genap */
+    background-color: #22252D; 
 }
 
 tr:hover {
-    background-color: #444851; /* Warna saat hover pada baris */
+    background-color: #444851; 
 }
