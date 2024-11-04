@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - RPIC</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="navbar-container">
+            <img src="/favicon.ico" alt="Logo" class="navbar-logo">
+            <ul class="navbar-menu">
+                <li class="navbar-item"><a href="/pages/profile/profile.html" class="navbar-link">Profile</a></li>
+                <li class="navbar-item"><a href="/pages/homeReservasi/home.html" class="navbar-link">Home</a></li>
+                <li class="navbar-item"><a href="/pages/history/history.html" class="navbar-link">History</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="text-judul">
+        <h1>Profile</h1>
+    </div>
+
+    <!-- Profile Page Content -->
+    <div class="profile-container">
+        <img src="/img/profileBg.png" alt="" class="profile-image">
+        <div class="profile-header">
+            <h2 class="profile-name" style="text-align: left;">ATYANAJG</h2>
+            <p class="profile-username" style="text-align: left;">atyanajg@gmail.com</p>
+        </div>
+        
+        <div class="profile-info">
+            <p class="profile-bio">Customer</p>
+            <div class="profile-details">
+                <div class="detail-item">
+                    <span class="detail-label">Email:</span>
+                    <span class="detail-value">atyanajg@gmail.com</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Phone:</span>
+                    <span class="detail-value">-</span>
+                </div>
+            </div>
+            <button class="btn-edit">Edit Profile</button>
+        </div>
+
+        <!-- Voucher Section -->
+        <div class="voucher-section">
+            <h3>Voucher Saya</h3>
+            <div class="voucher-list">
+                <div class="voucher-item">
+                    <span class="voucher-name">Voucher 10% Off</span>
+                    <span class="voucher-expiry">Expires: 31 Dec 2024</span>
+                    <button class="btn-view-voucher" data-voucher="Voucher 10% Off">Lihat Voucher</button>
+                </div>
+                <div class="voucher-item">
+                    <span class="voucher-name">Voucher Free 1 Hour</span>
+                    <span class="voucher-expiry">Expires: 15 Jan 2025</span>
+                    <button class="btn-view-voucher" data-voucher="Voucher Free 1 Hour">Lihat Voucher</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="voucherModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Voucher Detail</h2>
+            <p id="voucherDetail">Details will appear here.</p>
+        </div>
+    </div>
+
+    <!-- Edit Profile Modal Structure -->
+<div id="editProfileModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" id="closeEditProfileModal">&times;</span>
+        <h2>Edit Profile</h2>
+        <form id="editProfileForm">
+            <label for="editName">Name</label>
+            <input type="text" id="editName" name="name">
+            
+            <label for="editUsername">Username</label>
+            <input type="text" id="editUsername" name="username">
+            
+            <label for="editEmail">Email</label>
+            <input type="email" id="editEmail" name="email">
+            
+            <label for="editPhone">Phone</label>
+            <input type="text" id="editPhone" name="phone">
+            
+            <button type="button" class="btn-save" id="saveProfileChanges">Save Changes</button>
+        </form>
+    </div>
+</div>
+
+
+
+    <!-- jQuery Script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="profile.js"></script>
+</body>
+</html>
